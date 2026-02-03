@@ -1,0 +1,10 @@
+env/
+.venv/
+
+app/files/
+app/files-csv/
+uploads/
+
+__pycache__/
+*.pyc
+.DS_Store

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Processador de Ponto</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="card">
+    <h1>📊 Processador de Ponto Eletrônico</h1>
+
+    <form method="POST" enctype="multipart/form-data" onsubmit="disableButton()">
+        <input type="file" name="file" required>
+        <button id="submitBtn" type="submit" class="btn btn-primary">
+          Processar
+        </button>
+    </form>
+
+{% if finished %}
+  <a href="/download/{{ zip_name }}" class="btn btn-success">
+    Baixar ZIP
+  </a>
+{% endif %}
+
+</div>
+</body>
+<script>
+function disableButton() {
+  const btn = document.getElementById("submitBtn");
+  btn.disabled = true;
+  btn.innerText = "Processando...";
+}
+</script>
+</html>

@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1d2671, #c33764);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background: #1d2671;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.download {
+    display: block;
+    margin-top: 20px;
+    background: #2ecc71;
+    padding: 10px;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+}
